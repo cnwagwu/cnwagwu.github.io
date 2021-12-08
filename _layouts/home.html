@@ -1,0 +1,79 @@
+---
+layout: home
+---
+{% include header.html %}
+{% include nav.html %}
+<main>
+    {% include jumbotron.html %}
+    {% if page.about-title %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.about-title }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% if site.avatar %}
+            <div class="col-sm-4">
+                <img src="{{ site.baseurl }}/img/{{ site.avatar }}" alt="{{ site.title }}">
+            </div>
+            {% endif %}
+            <div class="col-sm-8">
+                <p>{{ page.about-description | markdownify }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    <a href="{{ page.about-link }}" class="btn btn-primary">{{ page.about-title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.press-title %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.press-title }}</h2>
+                {% include press.html %}
+                <p>
+                    <a href="{{ page.press-link }}" class="btn btn-primary">{{ page.press-title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if site.posts.size > 0 %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.posts-title }}</h2>
+                <div class="card-deck">
+                    {% for post in site.posts limit:3 %}
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>
+                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                            </h3>
+                            <p>
+                                <small>{{ post.date | date: "%B, %-d %Y"}}</small>
+                            </p>
+                            <p class="card-text">{{ post.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    <a href="{{ page.posts-link }}" class="btn btn-primary">{{ page.posts-title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% include analytics.html %}
+    {% include footer.html %}

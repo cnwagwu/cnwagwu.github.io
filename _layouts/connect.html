@@ -1,0 +1,77 @@
+---
+layout: wrapper
+---
+<div class="card-deck text-center">
+    {% if site.twitter %}
+    <div class="card">
+        <div class="card-body">
+            <a href="{{ site.twitter }}" class="stretched-link">
+                <p>
+                    <i class="fab fa-twitter fa-2x"></i>
+                </p>
+                <p class="card-title">Twitter</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    {% if site.linkedin %}
+    <div class="card">
+        <div class="card-body">
+            <a href="{{ site.linkedin }}" class="stretched-link">
+                <p>
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </p>
+                <p class="card-title">LinkedIn</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    {% if site.github %}
+    <div class="card">
+        <div class="card-body">
+            <a href="{{ site.github }}" class="stretched-link">
+                <p>
+                    <i class="fab fa-github fa-2x"></i>
+                </p>
+                <p class="card-title">GitHub</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    {% if site.facebook %}
+    <div class="card">
+        <div class="card-body">
+            <a href="{{ site.facebook }}" class="stretched-link">
+                <p>
+                    <i class="fab fa-facebook fa-2x"></i>
+                </p>
+                <p class="card-title">Facebook</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    {% if site.instagram %}
+    <div class="card">
+        <div class="card-body">
+            <a href="{{ site.instagram }}" class="stretched-link">
+                <p>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </p>
+                <p class="card-title">Instagram</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    {% if site.rss %}
+    <div class="card">
+        <div class="card-body">
+            <a href="{{ site.rss }}" class="stretched-link">
+                <p>
+                    <i class="fas fa-rss fa-2x"></i>
+                </p>
+                <p class="card-title">RSS</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+</div>

@@ -1,0 +1,50 @@
+# General
+title: Chizobam Nwagwu
+description: "Passionate about people-centered policy."
+avatar: profile.png
+#baseurl: ""
+#url: ""
+
+# Social media
+
+linkedin: https://www.linkedin.com/in/cnwagwu/
+twitter: 
+facebook: 
+github: https://github.com/cnwagwu
+instagram: 
+rss: 
+
+# Build settings
+theme:
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Date/time
+date: "%B %-d, %Y"
+timezone: 
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: :title
+  posts:
+    output: true
+    permalink: /posts/:title
+
+# Exclude
+exclude:
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
