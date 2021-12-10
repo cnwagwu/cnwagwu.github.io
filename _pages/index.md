@@ -7,6 +7,6 @@ about-description: I'm awesome.
 about-link: /about/
 press-title: Press
 press-link: /press/
-posts-title: Posts
-posts-link: /posts/
+posts-title: 
+posts-link: 
 ---
