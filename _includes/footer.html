@@ -4,14 +4,24 @@
             <div class="row">
                 <div class="col-sm-12">
                     <p>
+                        {% if site.linkedin %}
+                        <a href="{{ site.linkedin }}" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        {% endif %}
                         {% if site.twitter %}
                         <a href="{{ site.twitter }}" aria-label="Twitter">
                             <i class="fab fa-twitter fa-lg"></i>
                         </a>
                         {% endif %}
-                        {% if site.linkedin %}
-                        <a href="{{ site.linkedin }}" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin fa-lg"></i>
+                        {% if site.medium %}
+                        <a href="{{ site.medium }}" aria-label="Medium">
+                            <i class="fab fa-medium fa-lg"></i>
+                        </a>
+                        {% endif %}
+                        {% if site.figma %}
+                        <a href="{{ site.figma }}" aria-label="Figma">
+                            <i class="fab fa-figma fa-lg"></i>
                         </a>
                         {% endif %}
                         {% if site.github %}

@@ -1,12 +1,18 @@
 ---
 layout: home
-title: Welcome
+title: Passionate about people-centered policy.
 description: Passionate about people-centered policy.
 about-title: About
+about-img: profile.png
+about-img-alt: Chizobam Nwagwu
 about-description: I'm awesome.
 about-link: /about/
 press-title: Press
 press-link: /press/
-posts-title: 
-posts-link: 
+work-title: Work
+work-link: /work/
+posts-title: Posts
+posts-link: /posts/
+cv-title: Resume
+cv-link: /resume/
 ---

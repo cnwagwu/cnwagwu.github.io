@@ -1,18 +1,4 @@
 ---
 layout: wrapper
 ---
-<div class="card-deck">
-    {% for post in site.posts limit:3 %}
-    <div class="card">
-        <div class="card-body">
-            <h3>
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            </h3>
-            <p>
-                <small>{{ post.date | date: "%B, %-d %Y"}}</small>
-            </p>
-            <p class="card-text">{{ post.description }}</p>
-        </div>
-    </div>
-    {% endfor %}
-</div>
+{% include posts.html %}

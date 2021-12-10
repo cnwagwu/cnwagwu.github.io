@@ -1,7 +1,7 @@
 # General
 title: Chizobam Nwagwu
 description: "Passionate about people-centered policy."
-avatar: profile.png
+avatar: avatar.png
 #baseurl: ""
 #url: ""
 
@@ -9,10 +9,12 @@ avatar: profile.png
 
 linkedin: https://www.linkedin.com/in/cnwagwu/
 twitter: https://twitter.com/chizokemi
-facebook: 
+medium: x
+figma: x
 github: https://github.com/cnwagwu
-instagram: 
-rss: 
+facebook: x
+instagram: x
+rss: x
 
 # Build settings
 theme:
@@ -33,6 +35,16 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
 
 # Collections
 collections:
@@ -42,6 +54,9 @@ collections:
   posts:
     output: true
     permalink: /posts/:title
+  work:
+    output: true
+    permalink: /work/:title
 
 # Exclude
 exclude:
