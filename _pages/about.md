@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: About
-description: 
+description: hello
 ---
 
 Yes, I'm awesome.
