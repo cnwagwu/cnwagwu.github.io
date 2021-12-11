@@ -8,7 +8,8 @@
     --font-1: "Public Sans", sans-serif;
     --font-2: "Public Sans", sans-serif;
     --weight-1: 400;
-    --weight-2: 400;
+    --weight-2: 700;
+    --weight-3: 300;
     --size-1: 0;
     --size-2: .5rem;
     --size-3: 1rem;
@@ -23,10 +24,10 @@
     --size-12: 18.75rem;
     --size-13: 0.0625rem;
     --size-14: 15rem;
+    --size-15: 10rem;
 }
 
 /* General */
-
 
 body {
     color: var(--color-2);
@@ -49,8 +50,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
     letter-spacing: -.02em;
 }
 
+.h4 {
+    font-weight: var(--weight-3);
+    line-height: var(--size-5);
+}
+
+ul.list-unstyled li {
+    padding-bottom: var(--size-3);
+}
+
 a, a:visited, a:hover {
     color: var(--color-1);
+}
+
+h2 {
+    padding-bottom: var(--size-3);
 }
 
 /* Navbar */
@@ -93,25 +107,25 @@ a.navbar-brand:hover {
 
 /* Cards */
 
+img.md {
+    max-width: var(--size-15);
+}
+
 .card {
     margin-bottom: var(--size-3) !important;
     padding-top: var(--size-10);
 }
 
 .card a {
-    color: var(--color-2)
-}
-
-.card-deck .col, .card-deck .col-1, .card-deck .col-10, .card-deck .col-11, .card-deck .col-12, .card-deck .col-2, .card-deck .col-3, .card-deck .col-4, .card-deck .col-5, .card-deck .col-6, .card-deck .col-7, .card-deck .col-8, .card-deck .col-9, .card-deck .col-auto, .card-deck .col-lg, .card-deck .col-lg-1, .card-deck .col-lg-10, .card-deck .col-lg-11, .card-deck .col-lg-12, .card-deck .col-lg-2, .card-deck .col-lg-3, .card-deck .col-lg-4, .card-deck .col-lg-5, .card-deck .col-lg-6, .card-deck .col-lg-7, .card-deck .col-lg-8, .card-deck .col-lg-9, .card-deck .col-lg-auto, .card-deck .col-md, .card-deck .col-md-1, .card-deck .col-md-10, .card-deck .col-md-11, .card-deck .col-md-12, .card-deck .col-md-2, .card-deck .col-md-3, .card-deck .col-md-4, .card-deck .col-md-5, .card-deck .col-md-6, .card-deck .col-md-7, .card-deck .col-md-8, .card-deck .col-md-9, .card-deck .col-md-auto, .card-deck .col-sm, .card-deck .col-sm-1, .card-deck .col-sm-10, .card-deck .col-sm-11, .card-deck .col-sm-12, .card-deck .col-sm-2, .card-deck .col-sm-3, .card-deck .col-sm-4, .card-deck .col-sm-5, .card-deck .col-sm-6, .card-deck .col-sm-7, .card-deck .col-sm-8, .card-deck .col-sm-9, .card-deck .col-sm-auto, .card-deck .col-xl, .card-deck .col-xl-1, .card-deck .col-xl-10, .card-deck .col-xl-11, .card-deck .col-xl-12, .card-deck .col-xl-2, .card-deck .col-xl-3, .card-deck .col-xl-4, .card-deck .col-xl-5, .card-deck .col-xl-6, .card-deck .col-xl-7, .card-deck .col-xl-8, .card-deck .col-xl-9, .card-deck .col-xl-auto {
-    padding-left: var(--color-1) !important;
-    padding-right: var(--color-1) !important;
+    color: var(--color-2);
+    text-decoration: none;
 }
 
 /* Jumbotron */
 
 .jumbotron {
     background: var(--color-4);
-    border-bottom: var(--size-13) solid var(--color-2);
+    border-bottom: var(--size-13) solid var(--color-3);
     border-radius: var(--color-1);
 }
 

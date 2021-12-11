@@ -15,17 +15,13 @@ layout: home
         <div class="row">
             {% if page.about-img %}
             <div class="col-sm-4">
-                <img src="{{ site.baseurl }}/img/{{ page.about-img }}" alt="{{ page.about-img-alt }}">
+                <img src="{{ site.baseurl }}/img/{{ page.about-img }}" alt="{{ page.about-img-alt }}" class="mb-4 rounded-circle">
             </div>
             {% endif %}
             <div class="col-sm-8">
                 <p class="h4">{{ page.about-description }}</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
                 <p>
-                    <a href="{{ page.about-link }}" class="btn btn-primary">{{ page.about-title }}</a>
+                    <a href="{{ page.about-link }}" class="btn btn-primary mt-4">{{ page.about-title }}</a>
                 </p>
             </div>
         </div>
@@ -49,7 +45,7 @@ layout: home
         <div class="row">
             <div class="col-sm-12">
                 <h2>{{ page.work-title }}</h2>
-                {% include works.html limit=3 %}
+                {% include works.html limit=6 %}
             </div>
         </div>
         <div class="row">
@@ -73,7 +69,7 @@ layout: home
         </div>
     </div>
     {% endif %}
-    {% if site.posts.size > 0 %}
+    {% if page.posts-title %}
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
