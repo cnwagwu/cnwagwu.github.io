@@ -36,7 +36,7 @@ layout: home
         <div class="row">
             <div class="col-sm-12">
                 <h2>{{ page.press-title }}</h2>
-                {% include press.html %}
+                {% include press.html limit=6 %}
                 <p>
                     <a href="{{ page.press-link }}" class="btn btn-primary">{{ page.press-title }}</a>
                 </p>

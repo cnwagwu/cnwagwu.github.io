@@ -1,5 +1,8 @@
 <ul>
-    {% for item in site.data.press.docs %}
+    {% if include.limit %}
+        {% assign limitVar = include.limit | plus: 0 %}
+    {% endif %}
+    {% for item in site.data.press.docs limit:limitVar %}
     <li>
         <a href="{{ item.url }}">{{ item.title }}</a>
         ({{ item.source }})
