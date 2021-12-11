@@ -11,8 +11,8 @@ press-title: Press
 press-link: /press/
 work-title: Work
 work-link: /work/
-posts-title: Posts
-posts-link: /posts/
+posts-title: 
+posts-link: 
 cv-title: Resume
 cv-link: /resume/
 ---
