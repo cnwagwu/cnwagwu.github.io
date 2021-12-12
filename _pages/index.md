@@ -14,5 +14,5 @@ work-link: /work/
 posts-title: 
 posts-link: 
 cv-title: Resume
-cv-link: /resume/
+cv-link: https://drive.google.com/file/d/1X1zp3exYGMAeQrSEZAi6eG43i00eylMH/view?usp=sharing
 ---
