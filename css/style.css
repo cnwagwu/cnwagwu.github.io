@@ -36,6 +36,13 @@ body {
     font-weight: var(--weight-1);
 }
 
+/* Icons */
+
+a.dark, a.dark:visited {
+    color: var(--color-2);
+    text-decoration: none;
+}
+
 /* Images */
 
 img {

@@ -62,9 +62,21 @@ layout: home
         <div class="row">
             <div class="col-sm-12">
                 <h2>{{ page.cv-title }}</h2>
+                {% if page.cv-icon-link %}
+                <a href="{{ page.cv-link }}" class="dark">
+                    <i class="far fa-file-alt fa-6x mb-3"></i>
+                </a>
+                <p>
+                    <a href="{{ page.cv-link }}">
+                        {{ page.cv-icon-link-text }}
+                    </a>
+                </p>
+                {% endif %}
+                {% if page.cv-link %}
                 <p>
                     <a href="{{ page.cv-link }}" class="btn btn-primary">{{ page.cv-title }}</a>
                 </p>
+                {% endif %}
             </div>
         </div>
     </div>
