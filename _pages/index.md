@@ -15,6 +15,6 @@ posts-title:
 posts-link: 
 cv-title: Resume
 cv-icon-link-text: Chizobam Nwagwu's CV
-cv-icon-link: #
-cv-link: #
+cv-icon-link: /resume
+cv-link: /resume
 ---
