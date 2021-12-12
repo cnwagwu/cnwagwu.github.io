@@ -4,4 +4,5 @@ title: Contact
 description: 
 ---
 
-* Email: 
+* Email: chizobamnwagwu@gmail.com
+* [Linkedin](https://www.linkedin.com/in/cnwagwu/)
