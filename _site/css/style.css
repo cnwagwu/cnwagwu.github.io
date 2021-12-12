@@ -5,10 +5,14 @@
     --color-4: #ffffff;
     --color-5: #b548ff;
     --color-6: #f7ecff;
-    --font-1: "Public Sans", sans-serif;
-    --font-2: "Public Sans", sans-serif;
-    --weight-1: 400;
+    --font-1: 'Playfair Display', serif;
+    --font-2: 'Open Sans', sans-serif;
+    --font-3: 'Playfair Display', serif;
+    --font-4: 'Roboto Mono', monospace;
+    --weight-1: 300;
     --weight-2: 400;
+    --weight-3: 700;
+    --weight-4: 900;
     --size-1: 0;
     --size-2: .5rem;
     --size-3: 1rem;
@@ -23,16 +27,23 @@
     --size-12: 18.75rem;
     --size-13: 0.0625rem;
     --size-14: 15rem;
+    --size-15: 10rem;
 }
 
 /* General */
 
-
 body {
     color: var(--color-2);
-    font-family: var(--font-1);
+    font-family: var(--font-2);
     font-size: var(--size-4);
     font-weight: var(--weight-1);
+}
+
+/* Icons */
+
+a.dark, a.dark:visited {
+    color: var(--color-2);
+    text-decoration: none;
 }
 
 /* Images */
@@ -45,12 +56,24 @@ img {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
     color: var(--color-2);
     font-family: var(--font-1) !important;
-    font-weight: var(--weight-2);
-    letter-spacing: -.02em;
+    font-weight: var(--weight-3);
+}
+
+.h4 {
+    font-weight: var(--weight-3);
+    line-height: var(--size-5);
+}
+
+ul.list-unstyled li {
+    padding-bottom: var(--size-3);
 }
 
 a, a:visited, a:hover {
     color: var(--color-1);
+}
+
+h2 {
+    padding-bottom: var(--size-3);
 }
 
 /* Navbar */
@@ -59,6 +82,11 @@ a, a:visited, a:hover {
     background-color: var(--color-4) !important;
     border-radius: var(--size-1);
     border-bottom: var(--size-13) solid var(--color-2);
+}
+
+.navbar-brand {
+    font-family: var(--font-1);
+    font-weight: var(--weight-4) !important;
 }
 
 a.navbar-brand:hover {
@@ -72,15 +100,12 @@ a.navbar-brand:hover {
 
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item {
-    color: var(--color-2) !important;
-    font-weight: var(--weight-1);
-}
-
-.navbar-brand {
     font-family: var(--font-1);
+}
+
+.navbar li a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item {
+    color: var(--color-2) !important;
+    font-family: var(--font-4);
     font-weight: var(--weight-2) !important;
 }
 
@@ -93,25 +118,25 @@ a.navbar-brand:hover {
 
 /* Cards */
 
+img.md {
+    max-width: var(--size-15);
+}
+
 .card {
     margin-bottom: var(--size-3) !important;
     padding-top: var(--size-10);
 }
 
 .card a {
-    color: var(--color-2)
-}
-
-.card-deck .col, .card-deck .col-1, .card-deck .col-10, .card-deck .col-11, .card-deck .col-12, .card-deck .col-2, .card-deck .col-3, .card-deck .col-4, .card-deck .col-5, .card-deck .col-6, .card-deck .col-7, .card-deck .col-8, .card-deck .col-9, .card-deck .col-auto, .card-deck .col-lg, .card-deck .col-lg-1, .card-deck .col-lg-10, .card-deck .col-lg-11, .card-deck .col-lg-12, .card-deck .col-lg-2, .card-deck .col-lg-3, .card-deck .col-lg-4, .card-deck .col-lg-5, .card-deck .col-lg-6, .card-deck .col-lg-7, .card-deck .col-lg-8, .card-deck .col-lg-9, .card-deck .col-lg-auto, .card-deck .col-md, .card-deck .col-md-1, .card-deck .col-md-10, .card-deck .col-md-11, .card-deck .col-md-12, .card-deck .col-md-2, .card-deck .col-md-3, .card-deck .col-md-4, .card-deck .col-md-5, .card-deck .col-md-6, .card-deck .col-md-7, .card-deck .col-md-8, .card-deck .col-md-9, .card-deck .col-md-auto, .card-deck .col-sm, .card-deck .col-sm-1, .card-deck .col-sm-10, .card-deck .col-sm-11, .card-deck .col-sm-12, .card-deck .col-sm-2, .card-deck .col-sm-3, .card-deck .col-sm-4, .card-deck .col-sm-5, .card-deck .col-sm-6, .card-deck .col-sm-7, .card-deck .col-sm-8, .card-deck .col-sm-9, .card-deck .col-sm-auto, .card-deck .col-xl, .card-deck .col-xl-1, .card-deck .col-xl-10, .card-deck .col-xl-11, .card-deck .col-xl-12, .card-deck .col-xl-2, .card-deck .col-xl-3, .card-deck .col-xl-4, .card-deck .col-xl-5, .card-deck .col-xl-6, .card-deck .col-xl-7, .card-deck .col-xl-8, .card-deck .col-xl-9, .card-deck .col-xl-auto {
-    padding-left: var(--color-1) !important;
-    padding-right: var(--color-1) !important;
+    color: var(--color-2);
+    text-decoration: none;
 }
 
 /* Jumbotron */
 
 .jumbotron {
     background: var(--color-4);
-    border-bottom: var(--size-13) solid var(--color-2);
+    border-bottom: var(--size-13) solid var(--color-3);
     border-radius: var(--color-1);
 }
 
@@ -178,6 +203,14 @@ a.btn-primary:hover {
     background-color: var(--color-2);
     border: var(--size-13) solid var(--color-2);
     color: var(--color-4);
+}
+
+/* Badges */
+
+.badge {
+    background-color: white;
+    border-radius: var(--size-1) !important;
+    font-weight: var(--weight-3) !important;
 }
 
 /* Footer */
