@@ -84,13 +84,17 @@ h2 {
     border-bottom: var(--size-13) solid var(--color-2);
 }
 
-.navbar-brand {
+.navbar-brand, .brand {
     font-family: var(--font-1);
     font-weight: var(--weight-4) !important;
 }
 
 a.navbar-brand:hover {
     background: none;
+}
+
+.brand {
+    font-size: var(--size-4);
 }
 
 .navbar-light .navbar-toggler {
@@ -110,8 +114,7 @@ a.navbar-brand:hover {
 }
 
 .lead {
-    font-family: var(--font-1);
-    font-size: var(--size-5);
+    font-family: var(--font-2);
     color: var(--color-2);
     font-weight: var(--weight-1);
 }
@@ -226,6 +229,11 @@ a.btn-primary:hover {
 .footer p {
     margin: var(--size-1);
     padding: var(--size-2) var(--size-1);
+}
+
+.footer ul.list-unstyled li {
+    margin: var(--size-1);
+    padding: var(--size-1) var(--size-1) var(--size-7) var(--size-1);
 }
 
 .footer a {

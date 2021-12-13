@@ -2,7 +2,9 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-6">
+                    <p class="brand">{{ site.title }}</p>
+                    <p>{{ site.description }}</p>
                     <p>
                         {% if site.email %}
                         <a href="{{ site.email }}" aria-label="Email">
@@ -56,14 +58,19 @@
                         {% endif %}
                     </p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>{{ site.title }}</p>
+                <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                        {% for item in site.data.nav.docs %}
+                        {% if item.url %}
+                        <li>
+                            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
